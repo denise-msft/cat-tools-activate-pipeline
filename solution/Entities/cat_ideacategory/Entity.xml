@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity Name="cat_ideacategory" DisplayName="Idea Category">
+  <EntityInfo>
+    <entity Name="cat_ideacategory">
+      <LocalizedNames>
+        <LocalizedName description="Idea Category" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Idea Categories" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Stores idea categories for the Community Idea Portal" languagecode="1033" />
+      </Descriptions>
+      <attributes>
+        <attribute PhysicalName="cat_name" />
+        <attribute PhysicalName="cat_description" />
+        <attribute PhysicalName="cat_sortorder" />
+        <attribute PhysicalName="cat_iconname" />
+      </attributes>
+      <EntitySetName>cat_ideacategories</EntitySetName>
+      <IsBPFEntity>0</IsBPFEntity>
+      <IsActivity>0</IsActivity>
+      <IsActivityParty>0</IsActivityParty>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <IsAvailableOffline>0</IsAvailableOffline>
+      <IsChildEntity>0</IsChildEntity>
+      <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <IsCustomizable>1</IsCustomizable>
+      <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <IsDuplicateDetectionEnabled>0</IsDuplicateDetectionEnabled>
+      <IsEnabledForCharts>1</IsEnabledForCharts>
+      <IsImportable>1</IsImportable>
+      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMappable>1</IsMappable>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+      <IsRenameable>1</IsRenameable>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>0</IsVisibleInMobile>
+      <OwnershipType>UserOwned</OwnershipType>
+      <PrimaryNameAttribute>cat_name</PrimaryNameAttribute>
+    </entity>
+  </EntityInfo>
+</Entity>
