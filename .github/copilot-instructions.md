@@ -93,11 +93,34 @@ After making changes, verify by:
 4. Confirm flow JSON structure is valid
 5. Run `pac solution pack` mentally — ensure file paths match expected structure
 
-Test plans live in `tests/` as YAML files for Power Apps Test Engine:
-- `tests/canvas/` — Canvas app UI tests (Power Fx assertions)
-- `tests/mda/` — Model-driven app tests
-- `tests/dataverse/` — Data validation queries
-- `tests/flows/` — Flow test scenarios
+**IMPORTANT: When you add or modify schema, you MUST update the corresponding test definitions.**
+
+Test plans live in `tests/`:
+- `tests/canvas/` — Canvas app UI tests (Power Fx assertions, `.te.yaml` format)
+- `tests/mda/` — Model-driven app tests (`.te.yaml` format)
+- `tests/dataverse/schema-validation.json` — Schema validation definitions (executed by `tests/scripts/Run-DataverseValidation.ps1`)
+- `tests/flows/` — Flow test scenarios (JSON definitions)
+
+### Dataverse Schema Validation
+When adding tables or columns, add corresponding entries to `tests/dataverse/schema-validation.json`:
+```json
+{
+  "name": "Verify cat_newtable exists",
+  "type": "table_exists",
+  "table": "cat_newtable",
+  "expected": true
+},
+{
+  "name": "Verify cat_newtable has cat_mycolumn",
+  "type": "column_exists",
+  "table": "cat_newtable",
+  "column": "cat_mycolumn",
+  "expected": true
+}
+```
+Supported validation types: `table_exists`, `column_exists`, `relationship_exists`, `record_count`
+
+The CI pipeline runs this automatically after solution import and posts results as a PR comment.
 
 ## Environment Configuration
 

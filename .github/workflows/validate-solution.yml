@@ -59,6 +59,7 @@ jobs:
         continue-on-error: true
 
       - name: Import to Dev Environment
+        id: import
         run: |
           pac solution import `
             --path "${{ env.SOLUTION_NAME }}.zip" `
@@ -66,6 +67,37 @@ jobs:
             --force-overwrite true `
             --async true
         continue-on-error: true
+
+      - name: Run Dataverse Schema Validation
+        if: steps.import.outcome == 'success'
+        id: schema-validation
+        run: |
+          .\tests\scripts\Run-DataverseValidation.ps1 `
+            -ValidationFile "tests/dataverse/schema-validation.json" `
+            -OutputDirectory "TestOutput/dataverse"
+        continue-on-error: true
+
+      - name: Post Schema Validation Results to PR
+        if: always() && hashFiles('TestOutput/dataverse/schema-validation-summary.md') != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const summaryPath = 'TestOutput/dataverse/schema-validation-summary.md';
+            if (fs.existsSync(summaryPath)) {
+              const summary = fs.readFileSync(summaryPath, 'utf8');
+              const prNumber = context.payload.pull_request?.number;
+              if (prNumber) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: summary
+                });
+              }
+              // Also write to GitHub Actions Job Summary
+              await core.summary.addRaw(summary).write();
+            }
 
       - name: Upload Solution Artifact
         if: always()
@@ -80,6 +112,14 @@ jobs:
         with:
           name: checker-results
           path: checker-results/
+          if-no-files-found: ignore
+
+      - name: Upload Dataverse Validation Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dataverse-validation-results
+          path: TestOutput/dataverse/
           if-no-files-found: ignore
 
   test:
@@ -138,6 +178,47 @@ jobs:
               --environment ${{ secrets.PP_DEV_ENV_ID }}
           }
         continue-on-error: true
+
+      - name: Run Dataverse Schema Validation
+        run: |
+          .\tests\scripts\Run-DataverseValidation.ps1 `
+            -ValidationFile "tests/dataverse/schema-validation.json" `
+            -OutputDirectory "TestOutput/dataverse"
+        continue-on-error: true
+
+      - name: Post Test Summary to PR
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const glob = require('glob');
+            let summaryParts = [];
+            
+            // Collect all markdown summaries from test output
+            const mdFiles = [
+              'TestOutput/dataverse/schema-validation-summary.md'
+            ];
+            
+            for (const mdFile of mdFiles) {
+              if (fs.existsSync(mdFile)) {
+                summaryParts.push(fs.readFileSync(mdFile, 'utf8'));
+              }
+            }
+            
+            if (summaryParts.length > 0) {
+              const fullSummary = summaryParts.join('\n\n---\n\n');
+              const prNumber = context.payload.pull_request?.number;
+              if (prNumber) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: `# 🧪 Automated Test Results\n\n${fullSummary}`
+                });
+              }
+              await core.summary.addRaw(fullSummary).write();
+            }
 
       - name: Upload Test Results
         if: always()
