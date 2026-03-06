@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cat_sortorder">
+  <Type>IntegerType</Type>
+  <Name>cat_sortorder</Name>
+  <LogicalName>cat_sortorder</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MinValue>0</MinValue>
+  <MaxValue>999</MaxValue>
+  <DefaultValue>100</DefaultValue>
+  <Format>None</Format>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Sort Order" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Determines the display order of the category. Lower values appear first." languagecode="1033" />
+  </Descriptions>
+</attribute>

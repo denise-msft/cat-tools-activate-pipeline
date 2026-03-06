@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{bdc69742-5f16-4916-a1cf-370522716559}</formid>
+    <name>Quick Create</name>
+    <description>Quick Create form for Idea Category</description>
+    <type>7</type>
+    <objecttypecode>cat_ideacategory</objecttypecode>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <formactivationstate>1</formactivationstate>
+    <introducedversion>1.0.0.0</introducedversion>
+    <form>
+      <tabs>
+        <tab name="quickcreate" id="{b2c3d4e5-0001-0001-0001-000000000001}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Quick Create" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="quickcreate_section" showlabel="false" showbar="false" locklevel="0" id="{b2c3d4e5-0002-0001-0001-000000000002}" IsUserDefined="0" layout="varwidth" columns="1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b2c3d4e5-0003-0001-0001-000000000003}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cat_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cat_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b2c3d4e5-0004-0001-0001-000000000004}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="cat_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="cat_description" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Quick Create form for Idea Category" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

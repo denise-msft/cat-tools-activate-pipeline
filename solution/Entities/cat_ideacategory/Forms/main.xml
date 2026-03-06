@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{8807cf84-4d6d-46bb-9cae-13fef61fd202}</formid>
+    <name>Information</name>
+    <description>Main form for Idea Category</description>
+    <type>2</type>
+    <objecttypecode>cat_ideacategory</objecttypecode>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <formactivationstate>1</formactivationstate>
+    <introducedversion>1.0.0.0</introducedversion>
+    <form>
+      <tabs>
+        <tab name="general" id="{a1b2c3d4-0001-0001-0001-000000000001}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="category_details" showlabel="false" showbar="false" locklevel="0" id="{a1b2c3d4-0002-0001-0001-000000000002}" IsUserDefined="0" layout="varwidth" columns="2">
+                  <labels>
+                    <label description="Category Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a1b2c3d4-0003-0001-0001-000000000003}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cat_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cat_name" disabled="false" />
+                      </cell>
+                      <cell id="{a1b2c3d4-0004-0001-0001-000000000004}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sort Order" languagecode="1033" />
+                        </labels>
+                        <control id="cat_sortorder" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8A318C776}" datafieldname="cat_sortorder" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1b2c3d4-0005-0001-0001-000000000005}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Icon Name" languagecode="1033" />
+                        </labels>
+                        <control id="cat_iconname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cat_iconname" disabled="false" />
+                      </cell>
+                      <cell id="{a1b2c3d4-0006-0001-0001-000000000006}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1b2c3d4-0007-0001-0001-000000000007}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="cat_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="cat_description" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header>
+        <rows>
+          <row>
+            <cell id="{a1b2c3d4-0008-0001-0001-000000000008}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Main form for Idea Category" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
