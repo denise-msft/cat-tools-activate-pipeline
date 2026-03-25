@@ -6,25 +6,27 @@
 
 ## Overview
 
-Build an AI-augmented content scaling pipeline that transforms raw ideas (voice notes, text messages, forwarded content) into multi-platform social media posts with human approval gates. The system captures ideas from Microsoft Teams, generates platform-optimized content using Azure OpenAI, routes through an approval workflow, and publishes to LinkedIn, X/Twitter, Teams, Email, and Blog platforms automatically.
+Build an AI-augmented content activation pipeline for the **Copilot Studio Kit (CSK)** team that transforms product updates, feature releases, and team insights into multi-platform social media content. When the team ships a new CSK release, records a voice note about a feature, or forwards an interesting customer win — the pipeline automatically generates LinkedIn posts, X/Twitter threads, blog drafts, email newsletters, and Teams announcements optimized for each platform.
 
-Inspired by the "record once, publish everywhere" content scaling pattern — but built entirely on Microsoft first-party tools (Power Platform, Azure AI, Teams, SharePoint).
+The system captures ideas from a Microsoft Teams channel, generates platform-optimized content using Azure OpenAI (tuned to CSK brand voice), routes through a human approval workflow via Adaptive Cards, and publishes to configured social channels automatically.
+
+Built entirely on Microsoft first-party tools (Power Platform, Azure AI, Teams, SharePoint) — dogfooding the same stack CSK helps customers adopt.
 
 ## User Stories
 
-### Content Creator
-- As a content creator, I want to post a quick idea in a Teams channel (text, voice note, or forwarded message), so that it automatically becomes multi-platform content
-- As a content creator, I want AI to generate platform-optimized versions of my idea (LinkedIn post, X thread, blog draft, email blurb, Teams announcement), so that I don't have to manually rewrite for each platform
-- As a content creator, I want AI-generated images that match my brand guidelines, so that every post has a professional visual
-- As a content creator, I want to see a dashboard of all my content in various pipeline stages, so that I can track what's pending, approved, and published
+### CSK Team Member (Content Creator)
+- As a CSK team member, I want to post a quick note about a feature release in a Teams channel (text, voice note, or forwarded message), so that it automatically becomes multi-platform social content for our CSK community
+- As a CSK team member, I want AI to generate platform-optimized versions of my update (LinkedIn post, X thread, blog draft, email blurb, Teams announcement), using our CSK brand voice and messaging guidelines
+- As a CSK team member, I want AI-generated images that match Microsoft brand guidelines (blue #0078D4, clean tech illustrations, no logos), so that every post has a professional visual
+- As a CSK team member, I want to see a dashboard of all content in various pipeline stages, so that I can track what's pending, approved, and published across platforms
 
-### Content Approver
-- As a content approver, I want to review generated content via an Adaptive Card in Teams, so that I can approve, request edits, or reject without leaving Teams
-- As a content approver, I want to see the original idea alongside the generated content, so that I can verify accuracy and tone
-- As a content approver, I want approval requests to expire after 48 hours with a 24-hour reminder, so that content doesn't get stuck
+### Content Approver (CSK Lead / PM)
+- As a CSK lead, I want to review generated content via an Adaptive Card in Teams, so that I can approve, request edits, or reject without leaving Teams
+- As a CSK lead, I want to see the original idea alongside the generated content, so that I can verify accuracy, tone, and alignment with our release messaging
+- As a CSK lead, I want approval requests to expire after 48 hours with a 24-hour reminder, so that content doesn't get stuck
 
 ### Platform Admin
-- As a platform admin, I want to configure which platforms are enabled and their posting parameters, so that I can control where content gets published
+- As a platform admin, I want to configure which social channels are enabled and their posting parameters, so that I can control where CSK content gets published
 - As a platform admin, I want to see publishing logs with success/failure details, so that I can troubleshoot failed posts
 - As a platform admin, I want rate limit management and retry logic, so that publishing doesn't fail due to API throttling
 
