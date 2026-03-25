@@ -60,4 +60,4 @@ jobs:
             --async true
 
       - name: Publish Customizations
-        run: pac org publish-all
+        run: pac solution publish
