@@ -14,6 +14,40 @@
       "table": "cat_sample",
       "column": "cat_name",
       "expected": true
+    },
+    {
+      "name": "Verify cat_ideacategory table exists",
+      "type": "table_exists",
+      "table": "cat_ideacategory",
+      "expected": true
+    },
+    {
+      "name": "Verify cat_ideacategory has cat_name column",
+      "type": "column_exists",
+      "table": "cat_ideacategory",
+      "column": "cat_name",
+      "expected": true
+    },
+    {
+      "name": "Verify cat_ideacategory has cat_description column",
+      "type": "column_exists",
+      "table": "cat_ideacategory",
+      "column": "cat_description",
+      "expected": true
+    },
+    {
+      "name": "Verify cat_ideacategory has cat_sortorder column",
+      "type": "column_exists",
+      "table": "cat_ideacategory",
+      "column": "cat_sortorder",
+      "expected": true
+    },
+    {
+      "name": "Verify cat_ideacategory has cat_iconname column",
+      "type": "column_exists",
+      "table": "cat_ideacategory",
+      "column": "cat_iconname",
+      "expected": true
     }
   ],
   "notes": "Update this file as you add tables and columns to the solution. CI pipeline uses this to validate schema after import."

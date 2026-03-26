@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <savedqueryid>{25f3ea0c-484d-4ad9-95e3-cca50dc37964}</savedqueryid>
+    <name>Active Categories</name>
+    <description>Shows all active idea categories sorted by sort order.</description>
+    <querytype>0</querytype>
+    <isdefault>1</isdefault>
+    <isprivate>0</isprivate>
+    <isquickfindquery>0</isquickfindquery>
+    <returnedtypecode>cat_ideacategory</returnedtypecode>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="cat_ideacategory">
+          <attribute name="cat_name" />
+          <attribute name="cat_description" />
+          <attribute name="cat_sortorder" />
+          <attribute name="cat_iconname" />
+          <attribute name="statecode" />
+          <attribute name="createdon" />
+          <order attribute="cat_sortorder" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <layoutxml>
+      <grid name="resultset" object="cat_ideacategory" jump="cat_name" select="1" icon="1" preview="1">
+        <row name="result" id="cat_ideacategoryid">
+          <cell name="cat_name" width="300" />
+          <cell name="cat_description" width="350" />
+          <cell name="cat_sortorder" width="100" />
+          <cell name="cat_iconname" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <LocalizedNames>
+      <LocalizedName description="Active Categories" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows all active idea categories sorted by sort order." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

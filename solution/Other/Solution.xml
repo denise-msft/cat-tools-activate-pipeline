@@ -23,7 +23,9 @@
       <CustomizationPrefix>cat</CustomizationPrefix>
       <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
     </Publisher>
-    <RootComponents />
+    <RootComponents>
+      <RootComponent type="1" schemaName="cat_ideacategory" behavior="0" />
+    </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
