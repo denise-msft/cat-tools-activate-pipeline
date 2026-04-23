@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <savedqueryid>{b3e1f2a0-1c2d-4e5f-a6b7-c8d9e0f1a2b3}</savedqueryid>
+    <name>Active Ideas</name>
+    <description>Shows all active content ideas sorted by submitted date descending.</description>
+    <querytype>0</querytype>
+    <isdefault>1</isdefault>
+    <isprivate>0</isprivate>
+    <isquickfindquery>0</isquickfindquery>
+    <returnedtypecode>cap_contentidea</returnedtypecode>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="cap_contentidea">
+          <attribute name="cap_name" />
+          <attribute name="cap_status" />
+          <attribute name="cap_sourcetype" />
+          <attribute name="cap_targetplatforms" />
+          <attribute name="cap_submittedon" />
+          <attribute name="cap_generateimages" />
+          <attribute name="statecode" />
+          <attribute name="createdon" />
+          <order attribute="cap_submittedon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <layoutxml>
+      <grid name="resultset" object="cap_contentidea" jump="cap_name" select="1" icon="1" preview="1">
+        <row name="result" id="cap_contentideaid">
+          <cell name="cap_name" width="250" />
+          <cell name="cap_status" width="150" />
+          <cell name="cap_sourcetype" width="120" />
+          <cell name="cap_targetplatforms" width="200" />
+          <cell name="cap_submittedon" width="150" />
+          <cell name="cap_generateimages" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <LocalizedNames>
+      <LocalizedName description="Active Ideas" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows all active content ideas sorted by submitted date descending." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

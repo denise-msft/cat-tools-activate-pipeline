@@ -14,6 +14,89 @@
       "table": "cat_sample",
       "column": "cat_name",
       "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea table exists",
+      "type": "table_exists",
+      "table": "cap_contentidea",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_name column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_name",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_sourcemessage column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_sourcemessage",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_sourcetype column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_sourcetype",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_transcript column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_transcript",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_status column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_status",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_contentgroupid column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_contentgroupid",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_targetplatforms column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_targetplatforms",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_generateimages column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_generateimages",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_submittedon column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_submittedon",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_teamsmessageid column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_teamsmessageid",
+      "expected": true
+    },
+    {
+      "name": "Verify cap_contentidea has cap_voicerecordingurl column",
+      "type": "column_exists",
+      "table": "cap_contentidea",
+      "column": "cap_voicerecordingurl",
+      "expected": true
     }
   ],
   "notes": "Update this file as you add tables and columns to the solution. CI pipeline uses this to validate schema after import."

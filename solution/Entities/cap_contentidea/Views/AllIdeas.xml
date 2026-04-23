@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <savedqueryid>{c4f2a3b1-2d3e-5f6a-b7c8-d9e0f1a2b3c4}</savedqueryid>
+    <name>All Ideas</name>
+    <description>Shows all content ideas regardless of status, sorted by created date descending.</description>
+    <querytype>0</querytype>
+    <isdefault>0</isdefault>
+    <isprivate>0</isprivate>
+    <isquickfindquery>0</isquickfindquery>
+    <returnedtypecode>cap_contentidea</returnedtypecode>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="cap_contentidea">
+          <attribute name="cap_name" />
+          <attribute name="cap_status" />
+          <attribute name="cap_sourcetype" />
+          <attribute name="cap_targetplatforms" />
+          <attribute name="cap_submittedon" />
+          <attribute name="cap_generateimages" />
+          <attribute name="statecode" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <layoutxml>
+      <grid name="resultset" object="cap_contentidea" jump="cap_name" select="1" icon="1" preview="1">
+        <row name="result" id="cap_contentideaid">
+          <cell name="cap_name" width="250" />
+          <cell name="cap_status" width="150" />
+          <cell name="cap_sourcetype" width="120" />
+          <cell name="cap_targetplatforms" width="200" />
+          <cell name="cap_submittedon" width="150" />
+          <cell name="cap_generateimages" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <LocalizedNames>
+      <LocalizedName description="All Ideas" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows all content ideas regardless of status, sorted by created date descending." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

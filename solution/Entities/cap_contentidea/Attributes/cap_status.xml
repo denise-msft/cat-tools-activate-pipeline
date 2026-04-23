@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_status">
+  <Type>PicklistType</Type>
+  <Name>cap_status</Name>
+  <LogicalName>cap_status</LogicalName>
+  <RequiredLevel>ApplicationRequired</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <OptionSet>
+    <IsGlobal>0</IsGlobal>
+    <OptionSetType>picklist</OptionSetType>
+    <Options>
+      <Option Value="100000000">
+        <Labels>
+          <Label description="Draft" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000001">
+        <Labels>
+          <Label description="Transcribing" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000002">
+        <Labels>
+          <Label description="Transcribed" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000003">
+        <Labels>
+          <Label description="Generating" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000004">
+        <Labels>
+          <Label description="Generated" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000005">
+        <Labels>
+          <Label description="In Review" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000006">
+        <Labels>
+          <Label description="Approved" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000007">
+        <Labels>
+          <Label description="Publishing" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000008">
+        <Labels>
+          <Label description="Published" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000009">
+        <Labels>
+          <Label description="Rejected" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000010">
+        <Labels>
+          <Label description="Failed" languagecode="1033" />
+        </Labels>
+      </Option>
+    </Options>
+  </OptionSet>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Status" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Pipeline status of the content idea (Draft through Published or Failed)." languagecode="1033" />
+  </Descriptions>
+</attribute>

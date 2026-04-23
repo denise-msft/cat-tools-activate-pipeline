@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity Name="cap_contentidea" DisplayName="Content Idea">
+  <EntityInfo>
+    <entity Name="cap_contentidea">
+      <LocalizedNames>
+        <LocalizedName description="Content Idea" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Content Ideas" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Stores content idea submissions for the Content Activation Pipeline" languagecode="1033" />
+      </Descriptions>
+      <attributes>
+        <attribute PhysicalName="cap_name" />
+        <attribute PhysicalName="cap_sourcemessage" />
+        <attribute PhysicalName="cap_sourcetype" />
+        <attribute PhysicalName="cap_transcript" />
+        <attribute PhysicalName="cap_status" />
+        <attribute PhysicalName="cap_contentgroupid" />
+        <attribute PhysicalName="cap_targetplatforms" />
+        <attribute PhysicalName="cap_generateimages" />
+        <attribute PhysicalName="cap_submittedon" />
+        <attribute PhysicalName="cap_teamsmessageid" />
+        <attribute PhysicalName="cap_voicerecordingurl" />
+      </attributes>
+      <EntitySetName>cap_contentideas</EntitySetName>
+      <IsBPFEntity>0</IsBPFEntity>
+      <IsActivity>0</IsActivity>
+      <IsActivityParty>0</IsActivityParty>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <IsAvailableOffline>0</IsAvailableOffline>
+      <IsChildEntity>0</IsChildEntity>
+      <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <IsCustomizable>1</IsCustomizable>
+      <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <IsDuplicateDetectionEnabled>0</IsDuplicateDetectionEnabled>
+      <IsEnabledForCharts>1</IsEnabledForCharts>
+      <IsImportable>1</IsImportable>
+      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMappable>1</IsMappable>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+      <IsRenameable>1</IsRenameable>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>0</IsVisibleInMobile>
+      <OwnershipType>UserOwned</OwnershipType>
+      <PrimaryNameAttribute>cap_name</PrimaryNameAttribute>
+    </entity>
+  </EntityInfo>
+</Entity>

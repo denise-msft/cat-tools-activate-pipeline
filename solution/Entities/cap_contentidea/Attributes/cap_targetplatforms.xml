@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_targetplatforms">
+  <Type>StringType</Type>
+  <Name>cap_targetplatforms</Name>
+  <LogicalName>cap_targetplatforms</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>500</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Target Platforms" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Comma-separated list of target platforms for content generation (e.g. LinkedIn,Twitter,Blog)." languagecode="1033" />
+  </Descriptions>
+</attribute>
