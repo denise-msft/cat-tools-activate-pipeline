@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_sourcetype">
+  <Type>PicklistType</Type>
+  <Name>cap_sourcetype</Name>
+  <LogicalName>cap_sourcetype</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <OptionSet>
+    <IsGlobal>0</IsGlobal>
+    <OptionSetType>picklist</OptionSetType>
+    <Options>
+      <Option Value="100000000">
+        <Labels>
+          <Label description="Voice" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000001">
+        <Labels>
+          <Label description="Text" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000002">
+        <Labels>
+          <Label description="Forward" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000003">
+        <Labels>
+          <Label description="File" languagecode="1033" />
+        </Labels>
+      </Option>
+      <Option Value="100000004">
+        <Labels>
+          <Label description="Manual" languagecode="1033" />
+        </Labels>
+      </Option>
+    </Options>
+  </OptionSet>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Source Type" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="The source type of the content idea (Voice, Text, Forward, File, or Manual)." languagecode="1033" />
+  </Descriptions>
+</attribute>

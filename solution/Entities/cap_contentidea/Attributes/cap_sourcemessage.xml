@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_sourcemessage">
+  <Type>MemoType</Type>
+  <Name>cap_sourcemessage</Name>
+  <LogicalName>cap_sourcemessage</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>10000</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Source Message" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Original message content submitted as the content idea." languagecode="1033" />
+  </Descriptions>
+</attribute>

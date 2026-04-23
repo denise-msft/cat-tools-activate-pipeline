@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_name">
+  <Type>StringType</Type>
+  <Name>cap_name</Name>
+  <LogicalName>cap_name</LogicalName>
+  <RequiredLevel>ApplicationRequired</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>200</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Name" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Idea title (auto-generated or user-provided)." languagecode="1033" />
+  </Descriptions>
+</attribute>

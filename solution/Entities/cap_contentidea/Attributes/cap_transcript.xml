@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_transcript">
+  <Type>MemoType</Type>
+  <Name>cap_transcript</Name>
+  <LogicalName>cap_transcript</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>10000</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Transcript" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Transcribed text for voice inputs, produced by Azure AI Speech." languagecode="1033" />
+  </Descriptions>
+</attribute>

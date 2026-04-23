@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_teamsmessageid">
+  <Type>StringType</Type>
+  <Name>cap_teamsmessageid</Name>
+  <LogicalName>cap_teamsmessageid</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>200</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Teams Message ID" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Source Teams message ID for traceability back to the originating channel message." languagecode="1033" />
+  </Descriptions>
+</attribute>

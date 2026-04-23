@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_generateimages">
+  <Type>BooleanType</Type>
+  <Name>cap_generateimages</Name>
+  <LogicalName>cap_generateimages</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <DefaultValue>0</DefaultValue>
+  <OptionSet>
+    <TrueOption>
+      <Value>1</Value>
+      <Labels>
+        <Label description="Yes" languagecode="1033" />
+      </Labels>
+    </TrueOption>
+    <FalseOption>
+      <Value>0</Value>
+      <Labels>
+        <Label description="No" languagecode="1033" />
+      </Labels>
+    </FalseOption>
+  </OptionSet>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Generate Images" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Whether to generate AI images (via DALL-E 3) for this content idea." languagecode="1033" />
+  </Descriptions>
+</attribute>

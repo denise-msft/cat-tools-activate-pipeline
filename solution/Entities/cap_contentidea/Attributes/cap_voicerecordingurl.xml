@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_voicerecordingurl">
+  <Type>StringType</Type>
+  <Name>cap_voicerecordingurl</Name>
+  <LogicalName>cap_voicerecordingurl</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>2048</MaxLength>
+  <Format>Url</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Voice Recording URL" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Link to the archived voice recording in SharePoint." languagecode="1033" />
+  </Descriptions>
+</attribute>

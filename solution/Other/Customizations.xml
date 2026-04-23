@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Entities />
+  <Entities>
+    <Entity>cap_contentidea</Entity>
+  </Entities>
   <Roles />
   <Workflows />
   <FieldSecurityProfiles />

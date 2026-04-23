@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{d5a3b4c2-3e4f-6a7b-c8d9-e0f1a2b3c4d5}</formid>
+    <name>Information</name>
+    <description>Main form for Content Idea</description>
+    <type>2</type>
+    <objecttypecode>cap_contentidea</objecttypecode>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <formactivationstate>1</formactivationstate>
+    <introducedversion>1.0.0.0</introducedversion>
+    <form>
+      <tabs>
+        <tab name="general" id="{e6b4c5d3-4f5a-7b8c-d9e0-f1a2b3c4d5e6}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="idea_details" showlabel="false" showbar="false" locklevel="0" id="{f7c5d6e4-5a6b-8c9d-e0f1-a2b3c4d5e6f7}" IsUserDefined="0" layout="varwidth" columns="2">
+                  <labels>
+                    <label description="Idea Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a8d6e7f5-6b7c-9d0e-f1a2-b3c4d5e6f7a8}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cap_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cap_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9e7f8a6-7c8d-0e1f-a2b3-c4d5e6f7a8b9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cap_status" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cap_status" disabled="false" />
+                      </cell>
+                      <cell id="{c0f8a9b7-8d9e-1f2a-b3c4-d5e6f7a8b9c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Source Type" languagecode="1033" />
+                        </labels>
+                        <control id="cap_sourcetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cap_sourcetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d1a9b0c8-9e0f-2a3b-c4d5-e6f7a8b9c0d1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Submitted On" languagecode="1033" />
+                        </labels>
+                        <control id="cap_submittedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="cap_submittedon" disabled="false" />
+                      </cell>
+                      <cell id="{e2b0c1d9-0f1a-3b4c-d5e6-f7a8b9c0d1e2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Generate Images" languagecode="1033" />
+                        </labels>
+                        <control id="cap_generateimages" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="cap_generateimages" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f3c1d2e0-1a2b-4c5d-e6f7-a8b9c0d1e2f3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Target Platforms" languagecode="1033" />
+                        </labels>
+                        <control id="cap_targetplatforms" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cap_targetplatforms" disabled="false" />
+                      </cell>
+                      <cell id="{a4d2e3f1-2b3c-5d6e-f7a8-b9c0d1e2f3a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Content Group ID" languagecode="1033" />
+                        </labels>
+                        <control id="cap_contentgroupid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cap_contentgroupid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5e3f4a2-3c4d-6e7f-a8b9-c0d1e2f3a4b5}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Source Message" languagecode="1033" />
+                        </labels>
+                        <control id="cap_sourcemessage" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="cap_sourcemessage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6f4a5b3-4d5e-7f8a-b9c0-d1e2f3a4b5c6}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Transcript" languagecode="1033" />
+                        </labels>
+                        <control id="cap_transcript" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="cap_transcript" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="traceability" showlabel="true" showbar="false" locklevel="0" id="{d7a5b6c4-5e6f-8a9b-c0d1-e2f3a4b5c6d7}" IsUserDefined="0" layout="varwidth" columns="2">
+                  <labels>
+                    <label description="Traceability" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e8b6c7d5-6f7a-9b0c-d1e2-f3a4b5c6d7e8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Teams Message ID" languagecode="1033" />
+                        </labels>
+                        <control id="cap_teamsmessageid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cap_teamsmessageid" disabled="false" />
+                      </cell>
+                      <cell id="{f9c7d8e6-7a8b-0c1d-e2f3-a4b5c6d7e8f9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Voice Recording URL" languagecode="1033" />
+                        </labels>
+                        <control id="cap_voicerecordingurl" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cap_voicerecordingurl" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header>
+        <rows>
+          <row>
+            <cell id="{a0d8e9f7-8b9c-1d2e-f3a4-b5c6d7e8f9a0}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Main form for Content Idea" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

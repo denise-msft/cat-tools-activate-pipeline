@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_contentgroupid">
+  <Type>StringType</Type>
+  <Name>cap_contentgroupid</Name>
+  <LogicalName>cap_contentgroupid</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <MaxLength>100</MaxLength>
+  <Format>Text</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Content Group ID" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Groups related content pieces together under a common identifier." languagecode="1033" />
+  </Descriptions>
+</attribute>

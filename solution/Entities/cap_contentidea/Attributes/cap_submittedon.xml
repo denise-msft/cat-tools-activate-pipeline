@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attribute PhysicalName="cap_submittedon">
+  <Type>DateTimeType</Type>
+  <Name>cap_submittedon</Name>
+  <LogicalName>cap_submittedon</LogicalName>
+  <RequiredLevel>None</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind ValidForForm ValidForGrid</DisplayMask>
+  <Format>DateAndTime</Format>
+  <ImeMode>Auto</ImeMode>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+  <LocalizedNames>
+    <LocalizedName description="Submitted On" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="The date and time when the content idea was submitted." languagecode="1033" />
+  </Descriptions>
+</attribute>
