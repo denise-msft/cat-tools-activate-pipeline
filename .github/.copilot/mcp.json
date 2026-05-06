@@ -17,6 +17,29 @@
       "command": "npx",
       "args": ["-y", "@microsoft/dataverse-mcp@latest"],
       "description": "Dataverse MCP for direct table operations, schema queries, and data manipulation"
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+      },
+      "description": "GitHub MCP server for issues, PRs, comments, labels, and repo metadata. Used by triage and PR review agents."
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "description": "Playwright MCP for browser automation when the test-engineer agent needs to author or debug E2E specs against deployed code apps."
     }
-  }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "github_token",
+      "description": "GitHub Personal Access Token (repo + workflow scopes)",
+      "password": true
+    }
+  ]
 }
